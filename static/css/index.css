@@ -32,6 +32,19 @@ h6 {
     background: none;
     border: none;
 }
-.fas{
+
+.fas {
     color: #11324D;
+}
+
+.search-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+input[type="text"] {
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid #11324D
 }

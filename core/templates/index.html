@@ -4,6 +4,25 @@
 
 {% block content %}
 
-<p>Hi there</p>
+<div>
+    <img class="sun"
+        src="https://cdn-icons.flaticon.com/png/512/2222/premium/2222367.png?token=exp=1644418615~hmac=3bbc08e9538011bae4f924ac87d467b5"
+        alt="">
+</div>
 
+<div class="text-center mt-3">
+    <h1>Weather Forecast</h1>
+    <p>Get to know the weather forecast across the globe.</p>
+</div>
+
+<div class="search-container">
+
+    <form method="get">
+       
+        <input type="text" name="keyword" id="keyword" placeholder="   Search for a city">
+        <button class="btn btn-primary search-btn" type="submit"><span> <i class="fas fa-search"></i></span></button>
+        
+    </form>
+
+</div>
 {% endblock %}

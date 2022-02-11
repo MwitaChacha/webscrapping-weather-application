@@ -27,7 +27,11 @@
 
     </form>
 </div>
-
-<div>
+{% if result %}
+<div class="container text-center">
+<p>{{result.region}}</p>
+<p>{{result.temp_now}}</p>
+<p>{{result.dayhour}}</p>
 </div>
+{% endif %}
 {% endblock %}

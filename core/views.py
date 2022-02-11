@@ -34,6 +34,7 @@ def index(request):
        
         result['temp_now'] = soup.find("div", attrs={"class": "BNeawe iBp4i AP7Wnd"}).text
         
+        result['image'] = soup.find("img", attrs={"class": "wob_tci"})   
      
         result['dayhour'], result['weather_now'] = soup.find("div", attrs={"class": "BNeawe tAd8D AP7Wnd"}).text.split(
             '\n')

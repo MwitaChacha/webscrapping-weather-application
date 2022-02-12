@@ -15,23 +15,27 @@
     <p>Get to know the weather forecast across the globe.</p>
 </div>
 
-<hr>
+
 
 
 <div class="search-container">
-    <p>Search for a city</p>
+    <p>Search for a city or town</p>
     <form method="get">
 
-        <input type="text" name="city" id="city" placeholder="  City..">
-        <button class="btn btn-primary search-btn" type="submit"><span> <i class="fas fa-search"></i></span></button>
+        <input type="text" name="city" id="city" placeholder="Search"> <br>
+        <button class="btn btn-primary search-btn" type="submit">Search</button>
 
     </form>
 </div>
 {% if result %}
 <div class="container text-center">
-<p>{{result.region}}</p>
-<p>{{result.temp_now}}</p>
-<p>{{result.dayhour}}</p>
+    <p>{{result.region}}</p>
+    <p>{{result.temp_now}}</p>
+    <p>{{result.dayhour}}</p>
 </div>
 {% endif %}
+
+
+
+
 {% endblock %}
